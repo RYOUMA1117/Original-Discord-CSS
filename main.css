@@ -484,3 +484,35 @@ border-radius: 20px;
     background: var(--background-secondary);
     border-radius: 0 0 20px 20px;
 }
+.container-YkUktl {
+    height: 52px;
+    font-size: 14px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 8px;
+    margin-bottom: 1px;
+    border-top: 2px solid #adb1bb;
+}
+.searchBar-3TnChZ {
+    z-index: 2;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding: 0 10px;
+    height: 46px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low);
+}
+.container-ZMc96U.themed-Hp1KC_ {
+    background: var(--background-secondary);
+    max-width: 100%;
+    overflow-y: hidden;
+}
