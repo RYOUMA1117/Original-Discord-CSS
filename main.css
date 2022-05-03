@@ -3,10 +3,13 @@
     font-family: 'Noto Sans JP', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif' !important;
     transition-duration: 500ms;
     transition-timing-function: ease;
-    transition-property: color, opacity, background-color, display, div, position, width, span, font-size,text-decoration,box-shadow,border-color,border,border-radius;
+    transition-property: color, opacity, background-color, display, div, position, width, span, font-size,text-decoration,box-shadow,border-color,border,border-radius,transform,background-image;
     font-weight: 600;
     --scrollbar-auto-scrollbar-color-track: var(--scrollbar-thin-thumb) var(--scrollbar-thin-track);
     will-change: transition-duration,transition-timing-function,transition-property;
+}
+html,body {
+    cursor: url(https://media-ryouma.sytes.net:1117/icon/fws/pointer.cur), default;
 }
 .base-2jDfDU {
     transition: all 0.3s ease;
@@ -32,7 +35,8 @@
     background: var(--menu-background);
     padding: 1%;
     overflow: auto;
-    max-height: 25em
+    max-height: 25em;
+    animation: appear .5s ease;
 }
 .focused-3qFvc8 {
     background-color: #4f545c8c !important;
@@ -161,6 +165,10 @@ img {
     border: 1px solid var(--deprecated-store-bg);
     border-radius: 20px;
     backdrop-filter: blur(2px);
+    animation: appear .5s ease;
+}
+.userPopout-2j1gM4 {
+    animation: appear0 .5s ease;
 }
 .bodyInnerWrapper-2bQs1k,
 .footer-3naVBw {
@@ -703,6 +711,10 @@ transform: translateY(32%);
     border-radius: 20px;
     background-color: var(--background-primary);
     border: 2px solid var(--background-mobile-secondary);
+    animation: appear .5s ease;
+}
+.standardSidebarView-E9Pc3j {
+    animation: appear .5s ease;
 }
 .header-145e10 {
     background-color: var(--background-secondary-alt);
@@ -889,4 +901,239 @@ width: 460px !important;
 }
 .paginator-1eqD2g {
     border-radius: 0px;
+}
+button.button-12Fmur.enabled-9OeuTA.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F[aria-label=ユーザー設定] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/gear-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button.button-12Fmur.enabled-9OeuTA.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F[aria-label=スピーカーミュート][aria-checked=true] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/volume-mute-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button.button-12Fmur.enabled-9OeuTA.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F[aria-label=スピーカーミュート][aria-checked=false] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/volume-high-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button.button-12Fmur.enabled-9OeuTA.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F[aria-label=ミュート][aria-checked=false] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/microphone-solid.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button.button-12Fmur.enabled-9OeuTA.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F[aria-label=ミュート][aria-checked=true] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/microphone-slash-solid.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button.button-12Fmur.enabled-9OeuTA.button-f2h6uQ.lookBlank-21BCro.colorBrand-I6CyqQ.grow-2sR_-F svg {
+    display: none;
+}
+.drawerSizingWrapper-1txdWG {
+    animation: appear .5s ease;
+}
+@keyframes appear {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+.backdrop-2ByYRN.withLayer-2VVmpp {
+    animation: appear8 .5s ease;
+}
+@keyframes appear8 {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 0.95;
+    }
+}
+@keyframes appear0 {
+    0%{
+        border-radius: 20px;
+      opacity: 0;
+    }
+    100%{
+        border-radius: 20px;
+      opacity: 1;
+    }
+}
+.layer-86YKbF[aria-hidden=true] {
+    animation: appear .5s ease;
+}
+.layer-86YKbF[aria-hidden=false] {
+    animation: appear .5s ease;
+}
+.app-3xd6d0 {
+    animation: appear .5s ease;
+}
+div {
+    animation: appear .3s ease;
+}
+.iconWrapper-2awDjA[aria-label=メンバーリストを非表示] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/users-solid.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clickable-ZD7xvu .icon-2xnN2Y,.icon-18rqoe.visible-2yTnyW{
+    color: transparent !important;
+}
+
+.iconWrapper-2awDjA[aria-label=ピン留めされたメッセージ] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/thumbtack-solidn.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=ピン留めされたメッセージ]:hover {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/thumbtack-solid.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.selected-29KTGM[aria-label=ピン留めされたメッセージ] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/thumbtack-solid.svg);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=メンバーリストを表示] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/users-solidn.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=メンバーリストを表示]:hover {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/users-solid.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=ビデオ通話を開始] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/video-solidn.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=ビデオ通話を開始]:hover {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/video-solid.svg);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=音声通話を開始] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/phone-solidn.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=音声通話を開始]:hover {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/phone-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=DMにフレンドを追加] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/user-plus-solidn.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=DMにフレンドを追加]:hover,.iconWrapper-2awDjA[aria-label=DMにフレンドを追加]:active,.iconWrapper-2awDjA[aria-label=DMにフレンドを追加]:focus {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/user-plus-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=通知設定] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/bell-solidn.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=通知設定]:hover,.iconWrapper-2awDjA[aria-label=通知設定]:active,.iconWrapper-2awDjA[aria-label=通知設定]:focus {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/bell-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=スレッド] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/comments-solidn.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=スレッド]:hover,.iconWrapper-2awDjA[aria-label=スレッド]:active,.iconWrapper-2awDjA[aria-label=スレッド]:focus {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/comments-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=受信ボックス] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/inbox-solidn.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=受信ボックス]:hover,.iconWrapper-2awDjA[aria-label=受信ボックス]:active,.iconWrapper-2awDjA[aria-label=受信ボックス]:focus {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/inbox-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=ヘルプ] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/circle-question-solidn.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconWrapper-2awDjA[aria-label=ヘルプ]:hover,.iconWrapper-2awDjA[aria-label=ヘルプ]:active,.iconWrapper-2awDjA[aria-label=ヘルプ]:focus  {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/circle-question-solid.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-tZMHgY[aria-label=検索履歴の消去] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/magnifying-glass-solid.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+[aria-label=閉じる] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/xmark-solidn.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+[aria-label=閉じる]:hover,[aria-label=閉じる]:active,[aria-label=閉じる]:focus {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/xmark-solid.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.winButtonClose-3Q8ZH5[aria-label=閉じる] {
+    background-image: none;
+}
+[aria-label=閉じる] svg {
+color: transparent;
+}
+.winButtonClose-3Q8ZH5[aria-label=閉じる] svg{
+    display: block;
+    color: var(--interactive-normal);
+}
+.icon-tZMHgY[aria-label=検索履歴の消去] .public-DraftEditor-content[aria-expanded=true] {
+    background-image: url(https://media-ryouma.sytes.net:1117/icon/fws/xmark-solid.svg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
